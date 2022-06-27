@@ -12,12 +12,12 @@ package paquete2;
 public class Persona {
     
     private String nombre;
-    private String cedula;
+    private String apellido;
     private int edad;
     
-    public Persona(String n, String ide, int ed){
+    public Persona(String n, String a, int ed){
         nombre = n;
-        cedula = ide;
+        apellido = a;
         edad = ed;
     }
     
@@ -26,7 +26,7 @@ public class Persona {
     }
     
     public void establecerCedula(String n){
-        cedula = n;
+        apellido = n;
     }
     
     public String obtenerNombre(){
@@ -34,7 +34,7 @@ public class Persona {
     }
     
     public String obtenerCedula(){
-        return cedula;
+        return apellido;
     }
     
 }
